@@ -20,6 +20,7 @@ sudo apt-get update -y && sudo apt-get install git build-essential -y && git clo
 ### Then
     Would you like fuelup-init to modify your PATH variable for you? (N/y) Type `y`
 ```
+#Paste this
 export PATH="${HOME}/.fuelup/bin:${PATH}"
 ```
 ## Go to counter-contract

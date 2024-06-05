@@ -9,8 +9,7 @@
 ## Easy Setup
 
 ```bash
-apt-get update -y && apt-get install git build-essential -y &&
-git clone https://github.com/PrastianHD/Deploy-Fuel.git && cd Deploy-Fuel && chmod ug+x *.sh && ./setup.sh
+yes y | sudo apt-get update -y && sudo apt-get install git build-essential -y && git clone https://github.com/PrastianHD/Deploy-Fuel.git && cd Deploy-Fuel && chmod ug+x *.sh && ./setup.sh
 ```
 
 ## Import Wallet

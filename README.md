@@ -17,15 +17,12 @@
 ```bash
 sudo apt-get update -y && sudo apt-get install git build-essential -y && git clone https://github.com/PrastianHD/Deploy-Fuel.git && cd Deploy-Fuel && chmod ug+x *.sh && ./setup.sh
 ```
-### Then
-    Would you like fuelup-init to modify your PATH variable for you? (N/y) Type `y`
-```
-#Paste this
-export PATH="${HOME}/.fuelup/bin:${PATH}"
-```
+⚠︎ Would you like fuelup-init to modify your PATH variable for you? (N/y) Type `y`
+
 ## Go to counter-contract
 ```
 cd fuel-project/counter-contract
+export PATH="${HOME}/.fuelup/bin:${PATH}"
 ```
 
 ## Import Wallet

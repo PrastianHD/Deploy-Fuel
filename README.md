@@ -2,14 +2,29 @@
 
 ⚠︎ Use CODESPACE
 
-## Preparation
+## Preparation Wallet
 - Download Fuel [Wallet](https://chromewebstore.google.com/detail/fuel-wallet/dldjpboieedgcmpkchcjcbijingjcgok)
 - Claim [Faucet](https://faucet-testnet.fuel.network/) or [Bridge](https://app.fuel.network/bridge?from=eth&to=fuel) from ETH Sepolia
+
+## Preparation Codespace
+- Create a new [reposity](https://github.com/new) | repo name = fuel
+- Create a new [codespace](https://github.com/codespaces/new) 
+- Select Reposity : `yourgithub/fuel`
+- others skip
 
 ## Easy Setup
 
 ```bash
-yes y | sudo apt-get update -y && sudo apt-get install git build-essential -y && git clone https://github.com/PrastianHD/Deploy-Fuel.git && cd Deploy-Fuel && chmod ug+x *.sh && ./setup.sh
+sudo apt-get update -y && sudo apt-get install git build-essential -y && git clone https://github.com/PrastianHD/Deploy-Fuel.git && cd Deploy-Fuel && chmod ug+x *.sh && ./setup.sh
+```
+### Then
+    Would you like fuelup-init to modify your PATH variable for you? (N/y) Type `y`
+```
+export PATH="${HOME}/.fuelup/bin:${PATH}"
+```
+## Go to counter-contract
+```
+cd fuel-project/counter-contract
 ```
 
 ## Import Wallet

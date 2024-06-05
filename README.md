@@ -22,6 +22,8 @@ sudo apt-get update -y && sudo apt-get install git build-essential -y && git clo
 ## Go to counter-contract
 ```
 cd fuel-project/counter-contract
+```
+```
 export PATH="${HOME}/.fuelup/bin:${PATH}"
 ```
 

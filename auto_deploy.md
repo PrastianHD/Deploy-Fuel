@@ -2,7 +2,9 @@
 
 ## Go to Directory
 ```
-cd fuel-project/counter-contract
+cd Deploy-Fuel/fuel-project/counter-contract
+```
+```
 export PATH="${HOME}/.fuelup/bin:${PATH}"
 ```
 ## Install Requirements
@@ -29,8 +31,8 @@ set timeout -1
 set password "12345678"
 set index "0"
 set confirm "y"
-set delay1 4
-set delay2 60             
+set delay1 10
+set delay2 120            
 
 for {set i 0} {$i < 1000} {incr i 1} {
     spawn forc deploy --testnet
@@ -54,7 +56,7 @@ for {set i 0} {$i < 1000} {incr i 1} {
 ### Script Explanation
 - Edit according to your password
 - Edit each fuel* address
-- Edit delay. I set delay 1 minute or 60 for each deploy
+- Edit delay. I set delay 2 minute or 120d for each deploy
 - Edit how many deploys, default at 1000x
 
 ## Save Script

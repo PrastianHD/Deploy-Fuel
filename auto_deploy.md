@@ -34,7 +34,7 @@ set confirm "y"
 set delay1 10
 set delay2 120            
 
-for {set i 0} {$i < 1000} {incr i 1} {
+for {set i 0} {$i < 1000000} {incr i 1} {
     spawn forc deploy --testnet
     sleep $delay1
     expect "Please provide the password of your encrypted wallet vault at \"/home/codespace/.fuel/wallets/.wallet\":" {
